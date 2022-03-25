@@ -1,0 +1,13 @@
+.tinto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    padding: 2rem;
+    grid-template-areas: 
+    "texto1 texto1 img1"
+    "img2 img3 texto2";
+
+}
+.tinto__item {
+    width: 100%;
+}
