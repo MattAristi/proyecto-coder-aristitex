@@ -106,16 +106,6 @@ body {
   margin-bottom: 2rem;
   text-align: center; }
 
-.tinto {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  padding: 2rem;
-  grid-template-areas: "texto1 texto1 img1" "img2 img3 texto2"; }
-
-.tinto__item {
-  width: 100%; }
-
 .proveedor1 {
   display: flex;
   flex-direction: row;
@@ -216,6 +206,16 @@ body {
   justify-content: space-between;
   margin: o auto;
   padding: 0.5rem; }
+
+.tinto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  padding: 2rem;
+  grid-template-areas: "texto1 texto1 img1" "img2 img3 texto2"; }
+
+.tinto__item {
+  width: 100%; }
 
 /* tablet */
 @media screen and (max-width: 1024px) {
