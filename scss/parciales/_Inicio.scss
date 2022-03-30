@@ -1,18 +1,18 @@
+@mixin sectionsizes($width, $max-width, $Padding, $margin) {
+    width: $width;
+    max-width: $max-width;
+    padding: $Padding;
+    margin: $margin;
+}
 .presentacion {
-    background-color: rgb(30, 30, 56);
-    box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
-    border-radius: 5px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 
-    width: 95%;
-    max-width: 1100px;
-    padding: 1rem;
-    margin: 0 auto;
-    
     position: relative;
+    @include section (1100px, 1rem);
 }
 .presentacion__titulo {
-    color: azure;
+    color: linen;
     font-size: 22px;
 
     margin: 1rem 0;
@@ -28,30 +28,15 @@
     height: auto;
 }
 .galeriaInicio {
-    background-color: rgb(49, 49, 77);
-    box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
-    border-radius: 5px;
-    text-align: center;
-    width: 95%;
-    max-width: 1100px;
-    padding: 1rem;
-    margin: 0 auto;
+
     margin-bottom: 2rem;
-    
+    @include section (1100px, 1rem);
     position: relative;
 }
-.galeriaInicio__texto {
-    color: azure;
-    font-size: 12px;
 
-    margin: 1rem 0;
-} 
-.galeriaInicio__imagen {
-    display: inline;
-    width: 60%;
-    height: auto;
-    object-fit: cover;
-    margin-bottom: 2rem;
-    text-align: center;
-    
-} 
+.titulogaleriainicio {
+    color: azure;
+}
+.container{
+    width: 80%;
+}

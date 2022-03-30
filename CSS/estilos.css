@@ -37,7 +37,7 @@
 
 .header__nav li a:hover {
   font-weight: 300;
-  background-color: #1e1e38;
+  background-color: #31314d;
   color: darkgray;
   border-radius: 5px; }
 
@@ -57,18 +57,20 @@ body {
   background-color: darkgray; }
 
 .presentacion {
-  background-color: #1e1e38;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #31314d;
   box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
   border-radius: 5px;
   text-align: center;
   width: 95%;
   max-width: 1100px;
   padding: 1rem;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
 
 .presentacion__titulo {
-  color: azure;
+  color: linen;
   font-size: 22px;
   margin: 1rem 0; }
 
@@ -82,6 +84,7 @@ body {
   height: auto; }
 
 .galeriaInicio {
+  margin-bottom: 2rem;
   background-color: #31314d;
   box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
   border-radius: 5px;
@@ -90,21 +93,13 @@ body {
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
-  margin-bottom: 2rem;
   position: relative; }
 
-.galeriaInicio__texto {
-  color: azure;
-  font-size: 12px;
-  margin: 1rem 0; }
+.titulogaleriainicio {
+  color: azure; }
 
-.galeriaInicio__imagen {
-  display: inline;
-  width: 60%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 2rem;
-  text-align: center; }
+.container {
+  width: 80%; }
 
 .proveedor1 {
   display: flex;
@@ -223,7 +218,7 @@ body {
 
 @media screen and (max-width: 1024px) and (max-width: 600px) {
   .header__nav {
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: #31314d;
     width: 80%;
     max-width: 400px;
     height: 100vh;
@@ -243,7 +238,7 @@ body {
   .header__imagen {
     height: 50%; }
   .header__nav li a {
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: #31314d;
     padding: 4px;
     color: darkgray;
     margin-top: 1px;

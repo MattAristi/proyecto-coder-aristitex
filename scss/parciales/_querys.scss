@@ -5,7 +5,7 @@
     /* mobile */
     @media screen and (max-width: 600px) {
         .header__nav {
-           background-color: rgba(0, 0, 0, 0.479);
+           background-color: $csection;
            width: 80%;
            max-width: 400px;
            height: 100vh;
@@ -27,9 +27,9 @@
             height: 50%;
         }
         .header__nav li a {
-            background-color: rgba(0, 0, 0, 0.76);
+            background-color: $csection;
             padding: 4px;
-            color: darkgray;
+            color:$cfondo;
             margin-top: 1px;
             text-decoration: none;
             margin: 0 auto;

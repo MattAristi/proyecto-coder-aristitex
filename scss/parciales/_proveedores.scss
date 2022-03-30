@@ -1,7 +1,7 @@
 .proveedor1 {
     display: flex;
     flex-direction: row;
-    background-color: rgb(49, 49, 77);
+    background-color: $csection;
     box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
     border-radius: 5px;
     text-align: center;
@@ -15,7 +15,7 @@
 
 }
 .proveedor1__item { 
-    color:darkgray;
+    color:$cfondo;
     width: 95%;
     justify-content: space-around;
     margin: auto;
@@ -29,7 +29,7 @@
 .proveedor2 {
     display: flex;
     flex-direction: row;
-    background-color: rgb(49, 49, 77);
+    background-color: $csection;
     box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
     border-radius: 5px;
     text-align: center;
@@ -42,7 +42,7 @@
 
 }
 .proveedor2__item {
-    color:darkgray;
+    color:$cfondo;
     width: 95%;
     justify-content: center;
     margin: auto;

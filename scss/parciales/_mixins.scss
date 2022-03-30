@@ -1,0 +1,19 @@
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+@mixin byfcolor($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+}
+@mixin section ($max-width, $Padding) {
+    background-color: $csection;
+    box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    max-width: $max-width;
+    padding: $Padding;
+    margin: 0 auto;
+}
+
