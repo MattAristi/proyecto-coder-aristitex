@@ -6,6 +6,7 @@
     background-color: $background-color;
     color: $color;
 }
+// mixin section aplicado solo en inicio
 @mixin section ($max-width, $Padding) {
     background-color: $csection;
     box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
