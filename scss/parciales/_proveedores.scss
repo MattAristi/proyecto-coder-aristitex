@@ -10,12 +10,13 @@
     max-width: 1100px ;
     height: 350px;
     padding: 2rem;
+    position: relative;
    
     
 
 }
 .proveedor1__item { 
-    color:$cfondo;
+    color: $fcolor;
     width: 95%;
     justify-content: space-around;
     margin: auto;
@@ -42,7 +43,7 @@
 
 }
 .proveedor2__item {
-    color:$cfondo;
+    color:$fcolor;
     width: 95%;
     justify-content: center;
     margin: auto;

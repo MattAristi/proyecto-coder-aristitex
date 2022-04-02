@@ -1,13 +1,6 @@
-@mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
-}
-@mixin byfcolor($background-color, $color) {
-    background-color: $background-color;
-    color: $color;
-}
+
 // mixin section aplicado solo en inicio
-@mixin section ($max-width, $Padding) {
+@mixin section ( $max-width, $Padding) {
     background-color: $csection;
     box-shadow: 5px 10px 10px rgba(188, 195, 204, 0.8);
     border-radius: 5px;
@@ -16,5 +9,6 @@
     max-width: $max-width;
     padding: $Padding;
     margin: 0 auto;
+    padding: 2rem;
 }
 

@@ -1,54 +1,81 @@
 .header {
     display: flex;
     flex-direction: row;
-    max-width: 1100px;
+    flex: auto;
+     max-width: 1100px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     margin-bottom: 1rem;
     width: 95%;
     height: 4rem;
-    position: relative;
-}
+    padding: 1rem;
+    
 
-.header__imagen {
-    width: auto;
-    height: 100%;
-}
-.header__imagen img {
-    width: auto;
-    height: 100%;
-}
+    .imagen {
+        width: auto;
+        height: 4rem;
+        margin-left: 1rem;
+        margin-top: 0;
+     
 
+        img {
+        width: auto;
+        height: 100%;
+        margin-top: 0.5rem;
+    
+        }
+    }   
+    .header__pages {
+    margin: 0;
+    height: 4rem;
+        nav {
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            margin-top: 0;
+
+
+            li {
+                a {
+                    padding: 4px;
+                    color: black;
+                    text-decoration: none;
+                } 
+            }
+
+        }
+    }
+}   
+               
 .header__nav {
     display: flex;
     flex-direction: row;
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 2rem; 
+    li{
+        a:hover {
+            font-weight: 300;
+            background-color: $csection;
+            color: $cfondo;
+            border-radius: 5px;
+        
+        }
+    } 
+    .nav__button {
+        background-color: grey;
+        border-radius: 5px;
+        text-decoration: none;
+        
+    }
 }
 
-.header__nav li a {
-    padding: 4px;
-    color: black;
-    margin-top: 1px;
-    text-decoration: none;
-}
-.header__nav li a:hover {
-    font-weight: 300;
-    background-color: $csection;
-    color: $cfondo;
-    border-radius: 5px;
-
-}
-
-.header__nav .nav__button {
-    background-color: grey;
-    border-radius: 5px;
-    text-decoration: none;
-    
-}
 .btn-open-sidebar {
     display: none;
 }
 .btn-close-sidebar {
     display: none;
+}
+.header__pages {
+    margin: 0;
 }

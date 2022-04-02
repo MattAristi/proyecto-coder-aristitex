@@ -1,24 +1,17 @@
-@mixin sectionsizes($width, $max-width, $Padding, $margin) {
-    width: $width;
-    max-width: $max-width;
-    padding: $Padding;
-    margin: $margin;
-}
 .presentacion {
     display: flex;
     flex-direction: row;
-
     position: relative;
-    @include section (1100px, 1rem);
+    @include section ( 1100px, 1rem);
 }
 .presentacion__titulo {
-    color: linen;
+    color: $fcolor;
     font-size: 22px;
 
     margin: 1rem 0;
 } 
 .presentacion__parrafo {
-    color: azure;
+    color: $fcolor;
     font-size: 12px;
     line-height: 1.5;
 
@@ -28,14 +21,13 @@
     height: auto;
 }
 .galeriaInicio {
-
-    margin-bottom: 2rem;
     @include section (1100px, 1rem);
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .titulogaleriainicio {
-    color: azure;
+    color: $fcolor;
 }
 .container{
     width: 80%;

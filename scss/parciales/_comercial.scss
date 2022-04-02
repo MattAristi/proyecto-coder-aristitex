@@ -1,0 +1,10 @@
+.form {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    color: $fcolor;
+    @include section (1100px, 1rem);
+    position: relative;
+
+  
+}

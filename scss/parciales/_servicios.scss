@@ -3,11 +3,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     padding: 2rem;
-    grid-template-areas: 
-    "texto1 texto1 img1"
-    "img2 img3 texto2";
+    grid-template-areas:
+    "img3 texto1 img1"
+    "img2 texto2";
+    @include section (1100px, 1rem);
+    position: relative;
+    margin-top: 1rem;
+    
 
 }
 .tinto__item {
     width: 100%;
+}
+.titulo {
+    @include section (1100px, 1rem);
+    color: $fcolor;
 }
