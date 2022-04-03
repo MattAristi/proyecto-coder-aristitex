@@ -3,22 +3,28 @@
     flex-direction: row;
     position: relative;
     @include section ( 1100px, 1rem);
+    margin-top: 5rem;
+    
 }
 .presentacion__titulo {
     color: $fcolor;
+    opacity: 1;
     font-size: 22px;
-
+    z-index: 10;
     margin: 1rem 0;
 } 
 .presentacion__parrafo {
     color: $fcolor;
     font-size: 12px;
     line-height: 1.5;
+    opacity: 1;
 
 }
 .presentacion__imagen {
     width: 75%;
     height: auto;
+    opacity: 1;
+    
 }
 .galeriaInicio {
     @include section (1100px, 1rem);

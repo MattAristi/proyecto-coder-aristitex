@@ -1,42 +1,44 @@
 .header {
     display: flex;
     flex-direction: row;
+    background-color: white;
     flex: auto;
-     max-width: 1100px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    width: 95%;
-    height: 4rem;
-    padding: 1rem;
+    width: 100%;
+    z-index: 10;
+    height: 5rem;
+    margin-top: -5rem;
+    position: fixed;
+
     
 
     .imagen {
         width: auto;
         height: 4rem;
-        margin-left: 1rem;
-        margin-top: 0;
+        align-items: center;
+        margin-left: 2rem;
+        
      
-
         img {
         width: auto;
         height: 100%;
-        margin-top: 0.5rem;
-    
         }
+         .logoh {
+             display: none;
+         }
     }   
     .header__pages {
     margin: 0;
-    height: 4rem;
-        nav {
+    height: 4rem;;
+            nav {
             display: flex;
             flex-direction: row;
             font-size: 12px;
-            margin-top: 0;
+            margin-right: 2rem;
 
 
-            li {
+        li {
                 a {
                     padding: 4px;
                     color: black;
@@ -53,21 +55,23 @@
     flex-direction: row;
     font-size: 12px;
     margin-top: 2rem; 
-    li{
-        a:hover {
-            font-weight: 300;
-            background-color: $csection;
-            color: $cfondo;
-            border-radius: 5px;
-        
-        }
-    } 
+    
     .nav__button {
         background-color: grey;
         border-radius: 5px;
         text-decoration: none;
         
     }
+    li{
+        a:hover {
+            font-weight: 12px;
+            background-color: $cfondo;
+            color: $fcolor;
+            border-radius: 5px;
+        
+        }
+    } 
+    
 }
 
 .btn-open-sidebar {

@@ -1,6 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
-    // background-color: black;
        margin: 0;
-       background-image: url ("../imagenes/telasAristitex/fondo.jpg");
+       z-index: 1;
+    
+       
+}
+main{
+     .imgfondo {
+          position: fixed;
+          height: auto;
+          opacity: $opacity;
+     }
 }

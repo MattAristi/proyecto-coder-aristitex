@@ -1,11 +1,13 @@
 /* tablet */
 @media screen and (max-width: 1024px) {
-
+     .presentacion {
+         flex-direction: column;
+     }
 
     /* mobile */
     @media screen and (max-width: 600px) {
         .header__nav {
-        //    background-color: $csection;
+           background-color: $csection;
            width: 80%;
            max-width: 400px;
            height: 100vh;
@@ -23,35 +25,45 @@
            text-align: center;
            border-radius: 5px;
         }
-        .header__imagen {
-            height: 50%;
-        }
-        .header__nav li a {
-            background-color: $csection;
-            padding: 4px;
-            color:$cfondo;
-            margin-top: 1px;
-            text-decoration: none;
-            margin: 0 auto;
-            border-radius: 5px;
-           
-        }
-        .header__nav .nav__button {
-            background-color: black;
-            margin: 0 auto;
-            height: 18px;
+        .header{
+            .imagen {
+                align-items: baseline;
+                height: 60%;
+                
+                .logov {
+                    display: none;
+                    
+                }
+                .logoh {
+                    display: block;
+                    height: 100%;
+                }
+            }
             
-        
+        }
+        .header__nav {
+            li {
+                a {
+                    background-color: $csection;
+                    padding: 4px;
+                    color:$cfondo;
+                    margin-top: 1px;
+                    text-decoration: none;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                }  
+            }
         
         }
+        .header__nav {
+            
+        } 
         .btn-open-sidebar {
          display: inline-block;
          color: black;
-         width: 20px;
-         height: auto;
-        }
-        .header {
-            justify-content: space-around;
+         width: 30px;
+         margin-top: 2rem;
+            
         }
         #sidebar:target {
             transform: translateX(0);
@@ -60,6 +72,15 @@
         .btn-close-sidebar {
             display: block;
             width: 1.4rem;
+        }
+        .nav__button {
+            background-color: black;
+            color: $fcolor;
+            margin: 0 auto;
+            height: 18px;
+            
+        
+        
         }
     
     }
