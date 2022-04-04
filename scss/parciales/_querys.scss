@@ -1,34 +1,47 @@
 /* tablet */
 @media screen and (max-width: 1024px) {
-     .presentacion {
+    .presentacion {
          flex-direction: column;
-     }
-
+     
+        .fade-right {
+         display: none;
+        }
+        .zoom-in {
+         display: block;
+        }
+        .fade-left {
+         display: none;
+        }
+        .flip-left {
+         display: block;
+        }
+    }    
     /* mobile */
     @media screen and (max-width: 600px) {
         .header__nav {
-           background-color: $csection;
-           width: 80%;
-           max-width: 400px;
-           height: 100vh;
-           position: fixed;
-           top: 0;
-           left: 0;
-           transform: translateX(-100%);
-           flex-direction: column;
-           justify-content: center;
-           gap: 3rem;
-           padding: 6rem;
-           transition: transform 0.5s;
-           z-index: 100;
-           margin: 0 auto;
-           text-align: center;
-           border-radius: 5px;
+            background-color: rgba(250, 240, 230, 0.74);
+            width: 40%;
+            max-width: 400px;
+            min-width: 12rem;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            padding: 1rem;
+            transition: transform 0.5s;
+            z-index: 100;
+            margin-top: 5rem;
+            text-align: center;
+            border-radius: 5px;
         }
         .header{
             .imagen {
-                align-items: baseline;
-                height: 60%;
+                align-items: flex-start;
+                margin-left: 20vw;
                 
                 .logov {
                     display: none;
@@ -41,28 +54,32 @@
             }
             
         }
-        .header__nav {
-            li {
-                a {
-                    background-color: $csection;
+        nav {
+            
+            .header__nav {
+                
+                li {
+                    
+                    a {
                     padding: 4px;
                     color:$cfondo;
                     margin-top: 1px;
                     text-decoration: none;
+                    
                     margin: 0 auto;
                     border-radius: 5px;
-                }  
-            }
+                    }  
+                }
+            }    
         
         }
-        .header__nav {
-            
-        } 
+        
         .btn-open-sidebar {
          display: inline-block;
          color: black;
          width: 30px;
          margin-top: 2rem;
+         margin-right: 15vw;
             
         }
         #sidebar:target {

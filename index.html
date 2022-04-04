@@ -7,6 +7,7 @@
     <title>Aristitex</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -21,7 +22,7 @@
         </div>
         <div class="header__pages">
           <nav>
-              <a class="btn-open-sidebar" href="#sidebar"> <i class="fas fa-bars"></i></a>
+            <a class="btn-open-sidebar" href="#sidebar"> <i class="fas fa-bars"></i></a>
             <ul class="header__nav" id="sidebar">
               <li class="nav__button"><a href="./index.html">Inicio</a></li>
               <li><a href="./Pages/Materia-prima.html">Materia prima</a></li>
@@ -41,22 +42,36 @@
       </div>
       <section>
         <div class="presentacion">
-          <div>
-            <h1 class="presentacion__titulo">Nuestra empresa</h1>
+          <div class="fade-right" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="presentacion__titulo" >Nuestra empresa</h1>
             <p class="presentacion__parrafo">La empresa nace en 1976 del impulso motor de dos hermanos con amplia experiencia en el sector.
             Con el apoyo de mucha gente, a finales del mismo año nuestra primera máquina comienza a tejer. Con gran pasión y ganas de crecer la empresa sigue,
             año a año, desarrollándose y enfrentando nuevos desafíos. Poder brindar una solución integral a las necesidades del mercado, 
             ofreciendo siempre la mayor calidad y servicio es nuestro objetivo principal desde un principio y lo que nos motiva a diario.
             Aristitex, calidad y servicio en tejidos plano.</p>
          </div>
-         <div>
+         <div class="zoom-in" data-aos="zoom-in" data-aos-duration="1000">
+          <h1 class="presentacion__titulo" >Nuestra empresa</h1>
+          <p class="presentacion__parrafo">La empresa nace en 1976 del impulso motor de dos hermanos con amplia experiencia en el sector.
+          Con el apoyo de mucha gente, a finales del mismo año nuestra primera máquina comienza a tejer. Con gran pasión y ganas de crecer la empresa sigue,
+          año a año, desarrollándose y enfrentando nuevos desafíos. Poder brindar una solución integral a las necesidades del mercado, 
+          ofreciendo siempre la mayor calidad y servicio es nuestro objetivo principal desde un principio y lo que nos motiva a diario.
+          Aristitex, calidad y servicio en tejidos plano.</p>
+       </div>
+         <div class="fade-left" data-aos="fade-left">
            <img class="presentacion__imagen" src="./Imagenes/FOTOS/Tela1.jpg" alt="Tela1" srcset="">
          </div>
+         <div class="flip-left"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+          <img class="presentacion__imagen" src="./Imagenes/FOTOS/Tela1.jpg" alt="Tela1" srcset="">
         </div>
-        <div class="galeriaInicio">
+        </div>
           <div class="container">
-            <H2 class="titulogaleriainicio">Galeria de imagenes</H2>
-            <div class="row">
+            <div data-aos="zoom-in">
+              <H2 class="titulogaleriainicio">Producción de Tejidos</H2>
+              <p>Nuestra tejeduría cuenta con un diverso plantel de maquinarias que nos permite producir una amplia gama de productos.
+              La empresa posee telares de última generación y un control de calidad acordes a las exigencias del mercado.</p>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="row">
               <div class="col-12 col-md-6"></div>
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -90,7 +105,6 @@
               </div>
             </div>
           </div>
-        </div>  
       </section>
       
     </main>
@@ -102,6 +116,10 @@
       <a href=""><i class="fas fa-envelope"></i></a>
     </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

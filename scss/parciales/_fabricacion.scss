@@ -2,6 +2,8 @@
     @include section (1100px, 2rem);
     margin-bottom: 1rem;
     color: $fcolor;
+    margin-top: 5rem;
+    position: relative;
 }
 .generos {
     text-align: center;
@@ -10,5 +12,6 @@
 }
 
 .articulos1 {
-    @include section (1100px, 2rem);  
+    @include section (1100px, 2rem); 
+    position: relative; 
 } 

@@ -7,6 +7,7 @@
     <title>Aristitex-Comercialización</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -25,10 +26,10 @@
               <a class="btn-open-sidebar" href="#sidebar"> <i class="fas fa-bars"></i></a>
             <ul class="header__nav" id="sidebar">
             <li><a href="../index.html">Inicio</a> </li>
-            <li><a href="./Materia-prima.html">Materia prima</a></li>
+            <li><a href="./Materia-prima.html">Materia Prima</a></li>
             <li><a href="./Fabricacion.html">Productos</a></li>
             <li><a href="./Servicios.html">Servicios</a></li>
-            <li class="nav__button"><a href="./Comercializacion.html">Comercialización</a></li>
+            <li class="nav__button" ><a href="./Comercializacion.html">Comercialización</a></li>
            <!-- cierre sidebar -->
             <li><a class="btn-close-sidebar" href="#">❌</a></li>
           </ul>
@@ -36,47 +37,80 @@
       </div>
     </header>
     <main>
+      <div class="imgfondo">
+        <img src="../imagenes/telas Aristitex/decoracion e Indumentaria /fondo.JPG" alt="fondo">
+      </div>
       <section class="form">
+       
+        
         <div>
           <h1>Atencion y asesoramiento. </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis maiores dolores officiis mollitia sed ducimus deleniti ullam nesciunt. Nisi dolorem aliquam velit nulla ipsum! Eos quae laudantium aliquid aut doloribus.</p>
+          <p>Brindamos atención personalizada parar satisfacer las demandas de nuestros clientes en las áreas comercial y logística.
+          </p>
         </div>
         <div>
-        <form action="">
-          <fieldset>
+
+          <form action=""> 
             
-            <legend>Contanos como podemos ayudarte</legend>
-            <div>
+            <div class="comentario">
                 <label for="">Comentario:</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <legend>Datos personales</legend>
-  
-            <div>
+            
+            <div class="fild">
+              <legend>Datos de contacto:</legend>
                 <label for="fullname">Nombre:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Ingresar tu nombre">
-            </div>
-        
-            <legend>Datos de contacto:</legend>
-            <div>
-                <label for="">Email:</label>
-                <input type="email">
+                <input type="text" id="fullname" name="fullname" placeholder="Ingresar tu nombre" required autocomplete>
             </div>
             
-            <h2>Rubro</h2>
-            <div>
+            <div class="field">
+              <label for="Telefono">Telefono:</label>
+              <input type="number" id="telefono" name="telefono" placeholder="Ingresar tu n° telefonoco" required autocomplete>
+            </div>  
+            
+            <div class="field">
+                <label for="">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresar tu email" required autocomplete>
+            </div>
+            
+            <div class="field">
+              <label for="empresa">Empresa:</label>
+              <input type="text" id="empresa" name="empresa" placeholder="nombre de empresa" autocomplete>
+            </div>
+            
+            <div class="rubro">
                 <label for="Rubro">Rubro:</label>
                 <select name="Rubro" id="Rubro">
+                    <option selected disabled value="Seleccionar">Seleccionar</option>
                     <option value="Industria Gral">Industria Gral</option>
                     <option value="Calzado">Calzado</option>
                     <option value="Indumentaria">Indumentaria</option>
                 </select>
-            </div>
-        </fieldset>
-        </form>
-      </div>
-    </section>
+              </div>
+
+              <div class="info">
+                <label for="info">¿Deseas recibir informacion sobre promociones via mail?</label>
+                <div><input type="radio" id="info" name="info" required autocomplete>Si</div>
+                <div><input type="radio" id="info" name="info" required autocomplete>No</div>
+              </div>
+              
+              <div class="privacidad">
+                <label>He leido los terminos y condiciones.</label>
+                <input type="checkbox" id="privacidad" required>
+              </div>
+              <div class="submit">
+                <button>Enviar</button>
+              </div>
+          </form>
+
+        </div>
+      </section>
       <section>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.330524790818!2d-58.56383378477127!3d-34.570502380468064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9a210beb973%3A0x342d40d82f68e8de!2sARISTITEX!5e0!3m2!1ses-419!2suk!4v1649090581025!5m2!1ses-419!2suk"></iframe>
+        </div>
+      </section>
+      <!-- <section>
         <h2>Rubro</h2>
         <div class="conteiner">
           <div class="row">
@@ -92,7 +126,7 @@
           </div>
         </div>
 
-      </section>
+      </section> -->
 
     </main>
     <footer>
@@ -103,6 +137,10 @@
       <a href=""><i class="fas fa-envelope"></i></a>
     </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

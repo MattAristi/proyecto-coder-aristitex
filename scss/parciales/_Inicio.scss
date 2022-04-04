@@ -3,12 +3,21 @@
     flex-direction: row;
     position: relative;
     @include section ( 1100px, 1rem);
-    margin-top: 5rem;
-    
-}
+    // margin-top: 5rem;
+    align-items: center;
+    .zoom-in {
+        display: none;
+    }
+    .flip-left {
+        display: none;
+    }
+    div {
+        max-width: 98%;
+        
+    }
+}    
 .presentacion__titulo {
     color: $fcolor;
-    opacity: 1;
     font-size: 22px;
     z-index: 10;
     margin: 1rem 0;
@@ -17,24 +26,18 @@
     color: $fcolor;
     font-size: 12px;
     line-height: 1.5;
-    opacity: 1;
 
 }
 .presentacion__imagen {
-    width: 75%;
+    width: 100%;
     height: auto;
-    opacity: 1;
+    padding: 0.5rem;
     
 }
-.galeriaInicio {
-    @include section (1100px, 1rem);
-    position: relative;
-    margin-bottom: 2rem;
-}
 
-.titulogaleriainicio {
-    color: $fcolor;
-}
 .container{
     width: 80%;
+}
+.carousel-indicators{
+    color: black;
 }

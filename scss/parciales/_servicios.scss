@@ -1,14 +1,16 @@
+main {
+    margin-top: 5rem;
+}
 .tinto {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px 550px;
     padding: 2rem;
     grid-template-areas:
-    "img3 texto1 img1"
+    "img1 texto1"
     "img2 texto2";
     @include section (1100px, 1rem);
-    position: relative;
-    margin-top: 1rem;
+    
     
 
 }
