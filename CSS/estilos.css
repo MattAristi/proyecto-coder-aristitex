@@ -12,7 +12,7 @@ body {
 main .imgfondo {
   position: fixed;
   height: auto;
-  opacity: 0.7; }
+  opacity: 1; }
 
 .header {
   display: flex;
@@ -25,7 +25,9 @@ main .imgfondo {
   z-index: 10;
   height: 5rem;
   margin-top: -5rem;
-  position: fixed; }
+  position: fixed;
+  border-color: 5px;
+  color: black; }
   .header .imagen {
     width: auto;
     height: 4rem;
