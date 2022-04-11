@@ -94,7 +94,6 @@ main .imgfondo {
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative;
   align-items: center; }
   .presentacion .zoom-in {
@@ -189,7 +188,6 @@ main .imgfondo {
   max-width: 1100px;
   padding: 2rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative;
   margin-bottom: 1rem;
   color: black;
@@ -210,7 +208,6 @@ main .imgfondo {
   max-width: 1100px;
   padding: 2rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative;
   position: relative; }
 
@@ -231,7 +228,6 @@ main {
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative; }
 
 .tinto__item {
@@ -246,12 +242,10 @@ main {
   max-width: 1100px;
   padding: 1rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative;
   color: black; }
 
 section {
-  margin-top: 5rem;
   position: relative;
   align-items: center;
   text-align: center;
@@ -262,16 +256,15 @@ section {
   width: 90%;
   opacity: 1;
   max-width: 1100px;
-  padding: 1rem;
+  padding: 0rem;
   margin: 0 auto;
-  padding: 2rem;
   position: relative; }
   section div form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    max-width: 800px; }
+    margin-bottom: 2rem; }
   section div .map {
     align-items: center;
     text-align: center;
@@ -281,8 +274,71 @@ section {
     margin: 0 auto; }
 
 footer {
+  display: flex;
+  flex-direction: column;
   z-index: 100;
-  position: relative; }
+  height: 100px;
+  position: relative;
+  align-items: center;
+  width: 90%; }
+  footer .dataicons {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    margin-left: 1rem; }
+    footer .dataicons .datos {
+      width: 50%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 90%; }
+      footer .dataicons .datos p {
+        margin: 0; }
+    footer .dataicons .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 100%; }
+      footer .dataicons .icons .whapp {
+        width: 100%;
+        height: auto; }
+        footer .dataicons .icons .whapp i {
+          border-radius: 13.5px;
+          width: 27px;
+          height: 27px;
+          line-height: 27px;
+          background: linen;
+          color: darkgreen; }
+      footer .dataicons .icons .ig {
+        padding: 1rem; }
+        footer .dataicons .icons .ig i {
+          border-radius: 8px;
+          width: 26px;
+          height: 26px;
+          line-height: 26px;
+          background: linen;
+          color: black; }
+      footer .dataicons .icons .email {
+        position: relative; }
+        footer .dataicons .icons .email i {
+          color: crimson;
+          position: absolute;
+          top: -11px;
+          border-radius: 3px;
+          width: 30px;
+          height: 18px;
+          background: linen;
+          line-height: 19px; }
+  footer .desarrollo {
+    bottom: 0;
+    font-size: 8px; }
 
 /* tablet */
 @media screen and (max-width: 1024px) {

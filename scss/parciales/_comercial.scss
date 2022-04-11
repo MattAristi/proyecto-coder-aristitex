@@ -1,22 +1,21 @@
 
 
 section {
-    margin-top: 5rem;
     position: relative;
     align-items: center;
     text-align: center;
     color: $fcolor;
-    @include section (1100px, 1rem);
+    @include section (1100px, 0rem);
     
     div {
+
         form {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-    
-        
             width: 90%;
-            max-width: 800px;
+            margin-bottom: 2rem;
+            
         }
         .map {
             align-items: center;
@@ -25,6 +24,8 @@ section {
             max-height: auto;
             position: relative;
             margin: 0 auto;
+            
+            
         }
 
     }
