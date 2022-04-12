@@ -256,15 +256,45 @@ section {
   width: 90%;
   opacity: 1;
   max-width: 1100px;
-  padding: 0rem;
+  padding: 1rem;
   margin: 0 auto;
   position: relative; }
   section div form {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 90%;
-    margin-bottom: 2rem; }
+    max-width: 800px;
+    padding: 0 1rem;
+    margin-left: auto;
+    margin-right: auto; }
+    section div form .field {
+      display: flex;
+      flex-direction: column;
+      width: 14rem;
+      margin: 0.5rem 0; }
+      section div form .field label {
+        margin-bottom: 0.2rem;
+        font-size: 0.9rem; }
+      section div form .field input {
+        font-size: 1.1rem;
+        height: 2.2rem;
+        padding-left: 0.4rem;
+        border: 2px solid black; }
+      section div form .field select {
+        font-size: 1.1rem;
+        height: 2.2rem;
+        padding-left: 0.4rem;
+        border: 2px solid black; }
+    section div form h1 {
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase; }
+    section div form .clicks {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8rem; }
   section div .map {
     align-items: center;
     text-align: center;

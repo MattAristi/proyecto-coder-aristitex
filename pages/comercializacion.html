@@ -50,15 +50,12 @@
         </div>
         <div>
 
-          <form action=""> 
+          <form> 
             
-            <div class="comentario">
-                <label for="">Comentario:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
             
-            <div class="fild">
-              <legend>Datos de contacto:</legend>
+            <legend>Datos de contacto:</legend>
+            <div class="field">
+              
                 <label for="fullname">Nombre:</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Ingresar tu nombre" required autocomplete>
             </div>
@@ -75,10 +72,10 @@
             
             <div class="field">
               <label for="empresa">Empresa:</label>
-              <input type="text" id="empresa" name="empresa" placeholder="nombre de empresa" autocomplete>
+              <input type="text" id="empresa" name="empresa" placeholder="Nombre de empresa" autocomplete>
             </div>
             
-            <div class="rubro">
+            <div class="field">
                 <label for="Rubro">Rubro:</label>
                 <select name="Rubro" id="Rubro">
                     <option selected disabled value="Seleccionar">Seleccionar</option>
@@ -87,7 +84,11 @@
                     <option value="Indumentaria">Indumentaria</option>
                 </select>
               </div>
-
+              <div class="field">
+                <label for="">Comentario:</label>
+                <textarea name="" id="" cols="30" rows="3"></textarea>
+            </div>
+            <div class=clicks>
               <div class="info">
                 <label for="info">¿Deseas recibir informacion sobre promociones via mail?</label>
                 <div><input type="radio" id="info" name="info" required autocomplete>Si</div>
@@ -101,6 +102,7 @@
               <div class="submit">
                 <button>Enviar</button>
               </div>
+            </div>
           </form>
 
         </div>

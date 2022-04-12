@@ -5,17 +5,59 @@ section {
     align-items: center;
     text-align: center;
     color: $fcolor;
-    @include section (1100px, 0rem);
+    @include section (1100px, 1rem);
     
     div {
 
         form {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: space-around;
             width: 90%;
-            margin-bottom: 2rem;
+            max-width: 800px;
+            padding: 0 1rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            .field {
+                display: flex;
+                flex-direction: column;
+                
+
+                width: 14rem;
+                margin: 0.5rem 0;
+
+                label {
+                    margin-bottom: 0.2rem;
+                    font-size: 0.9rem;
+
+                }
+                input {
+                    font-size: 1.1rem;
+                    height: 2.2rem;
+                    padding-left: 0.4rem;
+                    border: 2px solid black;
+                }
+                select {
+                    font-size: 1.1rem;
+                    height: 2.2rem;
+                    padding-left: 0.4rem;
+                    border: 2px solid black;
+                }
+            }
             
+            h1 {
+                font-weight: bold;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .clicks {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 0.8rem;
+                
+            }
         }
         .map {
             align-items: center;
