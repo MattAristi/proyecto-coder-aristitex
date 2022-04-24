@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    @include section ( 1100px, 1rem);
-    // margin-top: 5rem;
+    @include section ( 1000px, 0rem);
     align-items: center;
     .zoom-in {
         display: none;
@@ -12,32 +11,27 @@
         display: none;
     }
     div {
-        max-width: 98%;
+        max-width: 100%;
+        
+    }
+    .presentacion__imagen {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
         
     }
 }    
-.presentacion__titulo {
-    color: $fcolor;
-    font-size: 22px;
-    z-index: 10;
-    margin: 1rem 0;
-} 
-.presentacion__parrafo {
-    color: $fcolor;
-    font-size: 12px;
-    line-height: 1.5;
 
-}
-.presentacion__imagen {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
+
+
+
+.container{
+    @include section ( 1000px, 0rem);
+    width: 95%;
+    
     
 }
 
-.container{
-    width: 80%;
-}
 .carousel-indicators{
     color: black;
 }

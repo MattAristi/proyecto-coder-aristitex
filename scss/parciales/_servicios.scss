@@ -1,23 +1,55 @@
-main {
+
+section{
+
+    @include section(1000,0);
     margin-top: 5rem;
-}
-.tinto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 550px 550px;
-    padding: 2rem;
-    grid-template-areas:
-    "img1 texto1"
-    "img2 texto2";
-    @include section (1100px, 1rem);
-    
     
 
+   
+
+    .tinto {
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "texto1 texto1 imagen1 imagen2"
+        "imagen3 imagen3 texto2 texto2"
+        "imagen4 imagen4 texto2 texto2";
+        
+        div {
+            padding: 10px;
+        }
+         .imagen {
+                width:70%;
+                height: auto;
+            }
+            p {
+                width: 100%;
+            }
+        
+    }
+    .item1 {
+        grid-area: texto1;
+    }
+    .item2 {
+        grid-area: texto2;
+    }
+    .item3 {
+        grid-area: imagen1;
+    }
+    .item4 {
+        grid-area: imagen2;
+    }
+    .item5 {
+        grid-area: imagen3;
+    }
+    .item6 {
+        grid-area: imagen4;
+    }
+
+
 }
-.tinto__item {
-    width: 100%;
-}
-.titulo {
-    @include section (1100px, 1rem);
-    color: $fcolor;
-}
+
+

@@ -13,10 +13,21 @@ h1 {
        
 }
 main{
+     width: 900px;
+     justify-content: center;
+     max-width: 1000px;
+     margin: 0 auto;
      .imgfondo {
           position: fixed;
           opacity: 0.5;
           width: 200%;
+          left: -2rem;
 
+     }
+     .titulo{
+          @include titulos
+     }
+     .parrafo{
+          @include parrafos
      }
 }

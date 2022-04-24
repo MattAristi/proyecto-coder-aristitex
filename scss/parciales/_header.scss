@@ -15,14 +15,14 @@
         width: auto;
         height: 4rem;
         align-items: center;
-        margin-left: 12vw;
+        margin-left: 7vw;
         
      
         img {
         width: auto;
         height: 100%;
         }
-         .logoh {
+         .logov {
              display: none;
          }
     }   
@@ -40,7 +40,8 @@
 
             li {
                 a {
-                padding: 4px;
+                padding-left: 4px;
+                padding-right: 4px;
                 color: black;
                 text-decoration: none;
                 } 
@@ -57,20 +58,25 @@
     margin-top: 2rem; 
     
     .nav__button {
-        background-color: rgb(194, 194, 194);
+        display: none;
+        background-color:rgb(194, 194, 194);
         border-radius: 5px;
         text-decoration: none;
         
     }
     li{
+        a {
+           
+        }
         a:hover {
             font-weight: 12px;
-            background-color: $cfondo;
+            background-color: white;
             border-radius: 5px;
-            border-width: 1px;
+            border-width: 1.5px;
             border-style: solid;
             border-color: black;
-        
+            
+           
         }
     } 
     

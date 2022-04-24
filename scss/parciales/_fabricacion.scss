@@ -1,17 +1,90 @@
 .fabricacion {
-    @include section (1100px, 2rem);
-    margin-bottom: 1rem;
+    @include section (1000px, 0);
     color: $fcolor;
     margin-top: 5rem;
-    position: relative;
-}
-.generos {
-    text-align: center;
-    justify-content: center;
-    color: $fcolor;
+    
 }
 
+
 .articulos1 {
-    @include section (1100px, 2rem); 
+    @include section (1000px, 0); 
     position: relative; 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: white;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        background-image: none;
+      }
+      
+      .carousel-control-next-icon:after
+      {
+        content: '>';
+        font-size: 55px;
+        color: white;
+      }
+      
+      .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 55px;
+        color: white;
+      }
+    
+} 
+.articulos2 {
+    @include section (1000px, 0); 
+    position: relative; 
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        background-image: none;
+    }
+
+    .carousel-control-next-icon:after{
+        content: '>';
+        font-size: 55px;
+        color: white;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 55px;
+        color: white;
+    }
+    .carousel-caption d-none d-md-block {
+        h5 {
+        color: white;
+    }
+}
+    
+} 
+.articulos3 {
+    @include section (1000px, 0); 
+    position: relative; 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 100px;
+        width: 100px;
+        outline: black;
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        background-image: none;
+      }
+      
+      .carousel-control-next-icon:after {
+            content: '>';
+            font-size: 55px;
+            color: white;
+      }
+      
+      .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 55px;
+            color: white;
+      }
+    
 } 
